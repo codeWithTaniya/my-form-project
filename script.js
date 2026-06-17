@@ -43,19 +43,6 @@ function onsubmit(event){
        
     }
     else{
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value} :${regInput.value} :${branchInput.value} :${age.value} : ${motto.value} :${review.value} : ${about.value} : ${join.value} : ${design.value} : ${option.value}`));
-
-        userList.appendChild(li);
-
-        nameInput.value ='';
-        emailInput.value='';
-        regInput.value = '';
-        branchInput.value = '';
-        age.value=''; 
-        motto.value=''; 
-        review.value=''; 
-        about.value='';
-        join.value='';
+        console.log("Validation Passed - Data sending to Formspree...");
     }
 }
