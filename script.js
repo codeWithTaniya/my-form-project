@@ -28,15 +28,17 @@ console.log(design);
 myform.addEventListener('submit', onsubmit);
 
 function onsubmit(event){
-    console.log("Submit clicked");
+    console.log("Submit button triggered");
     event.preventDefault();
 
     if(nameInput.value.trim() === '' || emailInput.value.trim() ==='' || regInput.value.trim() ==='' || branchInput.value.trim()==='' || age.value.trim()==='' || motto.value.trim()===''|| review.value.trim()===''|| about.value.trim()===''||join.value.trim() === ''){
-        
+        // Stop submission ONLY if validation fails
+        event.preventDefault();
+
         msg.classList.add('error');
         msg.innerHTML ='Please enter all fields';
+
         setTimeout(() => {
-            console.log("Inside IF block");
             msg.innerHTML ='';
             msg.classList.remove('error');
         },3000);

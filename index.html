@@ -25,25 +25,25 @@
                  <br>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" name="email">
                 </div>
                 <!-- Name -->
                  <br>
                 <div>
                     <label for="name">Name:</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" name="name">
                 </div>
                 <!-- registration number -->
                  <br>
                  <div>
                     <label for="regno">Registration-Number:</label>
-                    <input type="text" id="regno">
+                    <input type="text" id="regno" name="regno">
                 </div>
                 <br>
                 <!-- Branch -->
                 <div>
                     <label for="branch">Branch:</label>
-                    <input type="text" id="branch">
+                    <input type="text" id="branch" name="branch">
                 </div>
                 <!-- age -->
                  <br>
@@ -55,7 +55,7 @@
                  <br>
                 <div>
                     <label for="motto">Motto of the club:</label>
-                    <textarea name="message" id="motto"></textarea>
+                    <textarea id="motto" name="message" ></textarea>
                 </div>
                  <!-- Part of another club? -->
                 <br>
@@ -70,7 +70,7 @@
                 <br>
                     <div>
                     <label for="design">Have you done any design before?</label>
-                    <select name="option" id="design">
+                    <select  id="design" name="design">
                         <option value="YES">YES</option>
                         <option value="NO">NO</option>
                     </select>
@@ -79,23 +79,24 @@
                 <!-- reviwe about this club -->
                     <div>
                     <label for="review">Your review about this club:</label>
-                    <textarea id="review" name="message"></textarea>
+                    <textarea id="review" name="review"></textarea>
                 </div>
                  <!-- From where you know about the club -->
                   <br>
                 <div>
                     <label for="about">From where you know about the club :</label>
-                    <textarea id="about" name="message"></textarea>
+                    <textarea id="about" name="about_source"></textarea>
                 </div> 
                   <!-- why you want to join the club -->
                 <br>
                 <div>
                     <label for="join">why  you want to join this club:</label>
-                    <textarea id="join" name="message"></textarea>
+                    <textarea id="join" name="reason_to_join"></textarea>
                 </div> 
                    <!-- Attach your design -->
                     <!-- Error- Pop-up Fill the details  -->
-                    <input class="btn" type="submit" value="Submit">
+                    <!-- <input class="btn" type="submit" value="Submit"> -->
+                    <button type="submit">Submit</button>
             </form>
             
             <ul id="users"></ul>
