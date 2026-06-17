@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>GOOGLE  FORM</h1>
+        </header>
+        <section class="container">
+            <br>
+             <h2>Reqruitment of design team in ENACTUS</h2>
+            <br>
+            <hr>
+                <p>Please fill all the required details ****Mark details are neccesary to fill other then this you can ignore</p>
+                <hr> 
+            <br>
+            <form id="my-form">
+                <h2>Required details</h2>
+                <div class="msg"></div>
+                <!-- email -->
+                 <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <!-- Name -->
+                 <br>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <!-- registration number -->
+                 <br>
+                 <div>
+                    <label for="regno">Registration-Number:</label>
+                    <input type="text" id="regno">
+                </div>
+                <br>
+                <!-- Branch -->
+                <div>
+                    <label for="branch">Branch:</label>
+                    <input type="text" id="branch">
+                </div>
+                <!-- age -->
+                 <br>
+                 <div>
+                    <label for="age">Age:</label>
+                    <input type="date" id="age" name="age" required>
+                </div>
+                <!-- Motto -->
+                 <br>
+                <div>
+                    <label for="motto">Motto of the club:</label>
+                    <textarea name="message" id="motto"></textarea>
+                </div>
+                 <!-- Part of another club? -->
+                <br>
+                <div>
+                    <label for="option">Part of another club?</label>
+                    <select name="option" id="option">
+                        <option value="YES">YES</option>
+                        <option value="NO">NO</option>
+                    </select>
+                </div>
+                <!-- Have you design before -->
+                <br>
+                    <div>
+                    <label for="design">Have you done any design before?</label>
+                    <select name="option" id="design">
+                        <option value="YES">YES</option>
+                        <option value="NO">NO</option>
+                    </select>
+                </div>
+                <br>
+                <!-- reviwe about this club -->
+                    <div>
+                    <label for="review">Your review about this club:</label>
+                    <textarea id="review" name="message"></textarea>
+                </div>
+                 <!-- From where you know about the club -->
+                  <br>
+                <div>
+                    <label for="about">From where you know about the club :</label>
+                    <textarea id="about" name="message"></textarea>
+                </div> 
+                  <!-- why you want to join the club -->
+                <br>
+                <div>
+                    <label for="join">why  you want to join this club:</label>
+                    <textarea id="join" name="message"></textarea>
+                </div> 
+                   <!-- Attach your design -->
+                    <!-- Error- Pop-up Fill the details  -->
+                    <input class="btn" type="submit" value="Submit">
+            </form>
+            
+            <ul id="users"></ul>
+
+        </section>
+        <br>
+        <hr>
+        <footer id="main-footer">
+            <p>MNNIT copyright &copy; 2026 </p>
+        </footer>
+        <script src="script.js"></script>
+
+        
+    </body>
+</html>    
